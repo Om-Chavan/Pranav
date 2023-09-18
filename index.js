@@ -3,13 +3,13 @@
 window.onload = function () {
     // Your web app's Firebase configuration
     var firebaseConfig = {
-      apiKey: "AIzaSyD-ja3C7Dyqr_QKiiaVpPKO6hXVf-HMHgo",
+        apiKey: "AIzaSyD-ja3C7Dyqr_QKiiaVpPKO6hXVf-HMHgo",
         authDomain: "pranav-chatting-website.firebaseapp.com",
         projectId: "pranav-chatting-website",
         storageBucket: "pranav-chatting-website.appspot.com",
         messagingSenderId: "221117010268",
         appId: "1:221117010268:web:35670bbbb6063fb3ff7199"
-    };      
+    };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     // This is very IMPORTANT!! We're going to use "db" a lot.
@@ -145,7 +145,19 @@ window.onload = function () {
             var chat_input_send = document.createElement('button')
             chat_input_send.setAttribute('id', 'chat_input_send')
             chat_input_send.setAttribute('disabled', true)
-            chat_input_send.innerHTML = `<i class="far fa-paper-plane"></i>`
+            chat_input_send.innerHTML = `<i >send</i>`
+
+
+
+
+                    if (onkeyup === 'Enter'){
+                        console.log("hi");
+                    document.querySelector('form').submit();}
+            
+
+                   
+
+
 
             var chat_input = document.createElement('input')
             chat_input.setAttribute('id', 'chat_input')

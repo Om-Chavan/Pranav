@@ -164,9 +164,10 @@ body{
     height: 100%;
     float: left;
     font-size: 18px;
-    background-color: Transparent;
+    /* background-color: Transparent; */
+    /* border: solid; */
     text-align: right;
-    color: #ccc;
+    color: #c56262;
   }
   #chat_input_send.enabled{
     color: #D64045;
